@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details</title>
+</head>
+<body style="background-image: url(kanga.jpg); background-size: cover;">
+	<div>
+		<a href="index.htm">Add Student Details</a>
+		<a href="list.htm">View Students' Details</a>
+	</div>
+	
+	<?php
+	require_once 'header.php';
+	if(isset($_POST['ADM'])&&
+	isset($_POST['first_name'])
+	&&isset($_POST['middle_name'])
+	&&isset($_POST['last_name'])
+	&&isset($_POST['phone'])
+	&&isset($_POST['email']))
+	{
+		$sql= "INSERT INTO `student` (`ADM`, `FIRST`, `MIDDLE`, `LAST`, `PHONE`, `EMAIL`) VALUES ('', '', '', '', '', '')";
+	}
+	?>
+
+	<form method="post" action="<?php $_PHP_SELF ?>" 
+	 style="background-color: black; color: white; opacity: 0.6;">
+		<fieldset>
+			<legend>Enter student details below</legend>
+			ADM number:<br>
+		<input type="text" name="ADM"><br>
+		First name:<br>
+		<input type="text" name="first_name"><br>
+		Middle name:<br>
+		<input type="text" name="middle_name"><br>
+		Last name:<br>
+		<input type="text" name="last_name"><br>
+		Phone number:<br>
+		<input type="text" name="phone"><br>
+		Email:<br>
+		<input type="email" name="email"><br>
+		<br><br>
+		<input type="submit" name="student_form">
+
+		</fieldset>
+		
+	</form>
+
+
+
+</body>
+</html>

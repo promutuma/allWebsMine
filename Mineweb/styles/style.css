@@ -1,0 +1,40 @@
+body{background-color:#A400FF;}
+
+
+.navbar{
+    background-color:#4A586E;
+    float: left;
+  display: block;
+  width:60%;
+}
+
+
+section#carousel>figure>img{
+display: none;
+margin: 0px auto;
+float: left;
+  width:50.33%;
+}
+section#carousel>figure.visible>img{
+display: block;
+position: relative;
+overflow: hidden;
+float: left;
+  width: 50.33%;
+}
+a{padding:60px;
+text-decoration:none;
+color:#E6E7E8;
+}
+section[id=portal]{float:right;
+    width:45%;
+    display:block;
+    background-color:#9A76B3;
+    padding:20px;
+    opacity:0.85;
+    text-align:center;
+}
+.active{
+    background-color:#A400FF;
+    border:3px solid #4A586E;
+}

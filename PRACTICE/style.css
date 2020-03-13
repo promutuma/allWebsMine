@@ -1,0 +1,65 @@
+.main{
+    margin-left: 50px;
+    color: black;
+}
+ul>li:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+li a, .button{
+    text-decoration: none;
+    color: purple;
+}
+.menu>li, .button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-left: 40px;
+    background-color: cadetblue;
+    color: aliceblue;
+}
+ul>li{
+    display: inline-block;
+    background-color: cadetblue;
+    color: aliceblue;
+}
+body{
+    background-color: burlywood;
+    color: black;
+}
+a:hover{
+    color: antiquewhite;
+}
+.main:hover{
+    color: black;
+}
+form>input{
+    background-color: blueviolet;
+    color: goldenrod;
+    padding: 10px 10px;
+}
+pre>input{
+    background-color: aquamarine;
+    color: black;
+    padding: 7px 7px;
+}
+.taken, .error{
+    color: red;
+    background-color: darkblue;
+}
+table{
+    background-color: pink;
+    color: blue;
+    border: inset greenyellow;
+}
+
+.success{
+    color: green;
+}
+.message{
+    background-color: darkgreen;
+    color: antiquewhite;
+    padding: 10px 10px;
+    border: 3px 3px 3px purple;
+    box-shadow:5px 5px 5px grey;
+}
